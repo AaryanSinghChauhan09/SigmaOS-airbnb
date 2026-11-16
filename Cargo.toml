@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-airbnb"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS airbnb component"
+
+[lib]
+name = "airbnb"
+path = "src/lib.rs"
