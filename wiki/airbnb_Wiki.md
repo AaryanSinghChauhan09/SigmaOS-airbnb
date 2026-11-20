@@ -1,65 +1,50 @@
-# SigmaOS-airbnb Component Wiki
+# SigmaOS-SigmaOS-airbnb Component Wiki
 
 ## Overview
-SigmaOS-airbnb provides Airbnb-inspired hospitality and accommodation management support for the SigmaOS operating system. It demonstrates the hospitality subsystem and booking management within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic accommodation initialization.
+SigmaOS-SigmaOS-airbnb provides Airbnb component for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Hospitality Abstraction
-- Fail-Fast on Hospitality Initialization Errors
-- Deterministic Hospitality Setup
-- Clear Abstraction Over Hospitality APIs
-- Composition over Inheritance for hospitality extensions
+- SigmaOS-airbnb Abstraction
+- Fail-Fast on SigmaOS-airbnb Initialization Errors
+- Deterministic SigmaOS-airbnb Setup
+- Clear Abstraction Over SigmaOS-airbnb APIs
+- Composition over Inheritance for SigmaOS-airbnb extensions
 
 ## Architecture
-SigmaOS-airbnb follows a hospitality pattern:
-- **Hospitality Core**: Provides accommodation management, booking systems, and guest services
-- **Reservation System**: Supports room reservations, booking confirmations, and guest profiles
-- **Payment Integration**: Supports payment processing, booking fees, and transaction management
-- **Error Handling**: Fail-fast on invalid hospitality configurations or unsupported accommodation types
+SigmaOS-SigmaOS-airbnb follows a SigmaOS-airbnb pattern:
+- **SigmaOS-airbnb Core**: Provides SigmaOS-airbnb support, SigmaOS-airbnb management, and SigmaOS-airbnb tracking
+- **Management**: Supports SigmaOS-airbnb management, SigmaOS-airbnb configuration, and SigmaOS-airbnb lifecycle
+- **Tracking**: Supports SigmaOS-airbnb status, SigmaOS-airbnb tracking, and SigmaOS-airbnb lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-airbnb configurations or unsupported SigmaOS-airbnb types
 
 ## API
 The component provides the following public APIs:
-- `hospitality::book::room(room_type, duration)` - Book a room for given type and duration
-- `hospitality::reservation::confirm(booking)` - Confirm a reservation and generate confirmation
-- `hospitality::guest::manage(guest)` - Manage guest profile and preferences
-- `hospitality::payment::process(payment)` - Process booking payment and transaction
-- Error types for hospitality failure scenarios or unsupported accommodation types
+-  - Manage a SigmaOS-airbnb by given configuration
+-  - Register a SigmaOS-airbnb by given name
+-  - Get SigmaOS-airbnb status and SigmaOS-airbnb availability
+-  - Track SigmaOS-airbnb management and SigmaOS-airbnb tracking
+- Error types for SigmaOS-airbnb failure scenarios or unsupported SigmaOS-airbnb types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific hospitality configuration
-2. **Act**: Execute the code under test (room booking, reservation confirmation)
-3. **Assert**: Verify the expected hospitality results
+1. **Arrange**: Set up test environment with specific SigmaOS-airbnb configuration
+2. **Act**: Execute the code under test (SigmaOS-airbnb init, SigmaOS-airbnb management)
+3. **Assert**: Verify the expected SigmaOS-airbnb results
 
 Example:
-```rust
-#[test]
-fn test_hospitality_book_aaa() {
-    // Arrange
-    let room_type = "deluxe";
-    let duration = "3 nights";
-    
-    // Act
-    let result = hospitality::book::room(room_type, duration);
-    
-    // Assert
-    assert!(result.is_ok());
-    let booking = result.unwrap();
-    assert!(booking.is_confirmed());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Hospitality initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all hospitality failure scenarios
-- Unit tests provided for room booking and reservation management
-- Integration tests for full hospitality system with actual booking integration
+- Follows Rust best practices with 
+- SigmaOS-airbnb initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-airbnb failure scenarios
+- Unit tests provided for SigmaOS-airbnb management and configuration
+- Integration tests for full SigmaOS-airbnb system with actual SigmaOS-airbnb integration
 
 ## TODO
-- Add support for additional accommodation types (suite, apartment, villa)
-- Expand reservation capabilities (extended stays, group bookings, special requests)
-- Add payment integration features (multiple payment methods, refunds, transaction history)
-- Create integration tests with actual hospitality booking systems
-- Implement booking persistence and guest preference management
+- Add support for additional SigmaOS-airbnb types
+- Expand SigmaOS-airbnb capabilities (SigmaOS-airbnb features, SigmaOS-airbnb configurations, SigmaOS-airbnb tracking)
+- Add lifecycle features (SigmaOS-airbnb tracking, SigmaOS-airbnb lifecycle, SigmaOS-airbnb propagation)
+- Create integration tests with actual SigmaOS-airbnb systems and SigmaOS-airbnb integration
+- Implement SigmaOS-airbnb persistence and SigmaOS-airbnb state management
